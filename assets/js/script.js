@@ -28,7 +28,7 @@ $(function () {
 
             // weather icon
             var iconID = weatherObj[i].weather[0].icon;
-            var iconUrl = `http://openweathermap.org/img/wn/${iconID}@2x.png`;
+            var iconUrl = `https://openweathermap.org/img/wn/${iconID}@2x.png`;
             var iconEl = $('<img>').attr(`src`, iconUrl).addClass(`icon img-fluid`);
 
             // weather infos
@@ -55,7 +55,7 @@ $(function () {
 
     // Search geographical location from user input
     function searchGeoApi(query) {
-        var geoUrl = `http://api.openweathermap.org/geo/1.0/direct?`;
+        var geoUrl = `https://api.openweathermap.org/geo/1.0/direct?`;
         geoUrl = `${geoUrl}q=${query}&limit=5&appid=${apiKey}`;
         fetch(geoUrl)
         .then(function (response) {
