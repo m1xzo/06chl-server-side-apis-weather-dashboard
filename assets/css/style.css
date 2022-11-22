@@ -1,0 +1,58 @@
+:root {
+    --lightblue: #6991e3;
+    --blue: #465ab8;
+    --navyblue: #261360;
+    --darkblue: #323d4f;
+    --grey: #aeaeae; 
+    --lightgrey: #f5f5f5;
+}
+
+body {
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+}
+  
+header {
+    background-image: linear-gradient(to right, var(--blue) , var(--navyblue));
+}
+
+.card {
+    background-color: var(--darkblue);
+}
+  
+.icon {
+    width: 50px;
+}
+
+.search-btn, .clear-btn{
+    background-color: var(--lightblue);
+    color: var(--lightgrey);
+}
+
+.search-btn:hover, .clear-btn:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.option {
+    background-color: var(--lightgrey);
+}
+
+.option:hover {
+    background-color: var(--grey);
+    color: white;
+}
+
+#search-history {
+    max-height: 50vh;
+}
+
+#search-history .btn {
+    background-color: var(--grey);
+    color: black;
+}
+
+#search-history .btn:hover {
+    background-color: var(--blue);
+    color: white;
+}
